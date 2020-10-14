@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+}
+.navbar{
+    position: fixed;
+    background-color: #000000;
+    background-image: none;
+    padding: 3px;
+    color: white; 
+    width: -webkit-fill-available;
+    overflow: hidden;
+    z-index: 12;
+}
+.navbar ul{
+    position: relative;
+    bottom: 16px;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 31%;
+}
+.navbar li{
+    font-weight: bold;
+    float: left;
+    font-family: sans-serif;
+}
+.navbar li a{
+    padding: 3px;
+    text-decoration: none;
+    margin: 46px;
+    color: white;
+    font-size: 19px;
+    
+}
+.navbar a:hover{
+    text-decoration: underline ;
+    color: aqua;
+}
+.navbar h1{
+    position: relative;
+    top: 9px;
+    display: inline-block;
+    padding: 3px;
+    margin: 10px;
+    padding-left: 35px;
+    font-family: math;
+    font-size: 34px;
+}
+iframe{
+    margin: 21px;
+}
+.video{
+    text-decoration: underline;
+    position: relative;
+    top: 85px;
+    width: -webkit-fill-available;
+    overflow: hidden;
+    margin: 38px;
+    padding: 10px;
+    font-family: system-ui;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+}
+.left{
+    width: 30%;
+    float: left;
+    margin: 5px;
+    padding: 3px;
+    margin-top: 40px;
+}
+.left h2{
+    width: 95%;
+    float: right;
+    color: black;
+}
+.center{
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+    padding: 3px;
+    margin-top: 40px;
+    position: relative;
+    left: 4%;
+}
+.center h2{
+    width: 95%;
+    float: right;
+    color: black;
+}
+.right{
+    width: 30%;
+    float: right;
+    margin: 5px;
+    padding: 3px;
+    margin-top: 40px;
+}
+.right h2{
+    width: 105%;
+    float: left;
+    color: black;
+}

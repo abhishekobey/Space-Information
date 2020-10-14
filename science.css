@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+}
+.navbar{
+    position: fixed;
+    background-color: #000000;
+    padding: 3px;
+    color: white; 
+    width: -webkit-fill-available;
+    overflow: hidden;
+    z-index: 12;
+}
+.navbar ul{
+    position: relative;
+    bottom: 16px;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 31%;
+}
+.navbar li{
+    font-weight: bold;
+    float: left;
+    font-family: sans-serif;
+}
+.navbar li a{
+    padding: 3px;
+    text-decoration: none;
+    margin: 46px;
+    color: white;
+    font-size: 19px;
+    
+}
+.navbar a:hover{
+    text-decoration: underline ;
+    color: aqua;
+}
+.navbar h1{
+    position: relative;
+    top: 9px;
+    display: inline-block;
+    padding: 3px;
+    margin: 10px;
+    padding-left: 35px;
+    font-family: math;
+    font-size: 34px;
+}
+.science{
+    text-decoration: underline;
+    position: relative;
+    top: 85px;
+    width: -webkit-fill-available;
+    overflow: hidden;
+    margin: 6%;
+    padding: 10px;
+    font-family: system-ui;
+    display: inline-block;
+}
+.science h1{
+    text-decoration: underline;
+    float: left;
+    font-family: system-ui;
+    margin: 5px;
+    color: white;
+}
+iframe{
+    margin-left: 21px;
+}
+.s_a{
+    width: 76%;
+    float: left;
+    margin: 5px;
+    padding: 3px;
+    margin-top: 40px;
+}
+.s_a h2{
+    display: inline-block;
+    width: 51%;
+    height: 120px;
+    color: white;
+    margin: 4px;
+    font-size: 24px;
+}
+.s_a p{
+    font-weight: 500;
+    color: #08fcf0;
+    font-size: 15px;
+}
+#intro{
+    font-family: system-ui;
+    float: left;
+    color:white;
+    font-size: large;
+}
+#intro img{
+    width: 20%;
+    float: right;
+}
+.bg{
+    background-image: url("astro_bg.jpg");
+}
