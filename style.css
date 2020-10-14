@@ -39,7 +39,6 @@
 .navbar h1{
     position: relative;
     top: 9px;
-    display: inline-block;
     padding: 3px;
     margin: 10px;
     padding-left: 35px;
@@ -82,9 +81,13 @@
         height: 50px;
     }
     .navbar h1{
+        position: relative;
+        top: 9px;
+        padding-left: 35px;
+        font-family: math;
         font-size: 16px;
         padding: 1px;
-        margin: 0%;
+        margin: auto;
     }
     .navbar li a{
         padding: 1px;
@@ -92,8 +95,11 @@
         font-size: 12px;
     }
     .navbar ul{
+        display: inline-block;
+        margin: auto;
         position: relative;
         bottom: -10px;
+        padding-left: 0%;
     }
     .home{
         position: relative;
