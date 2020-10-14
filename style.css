@@ -92,3 +92,71 @@
     color: #000000;
     list-style: inside;
 }
+@media (max-width: 500px){
+    .navbar{
+        height: 50px;
+    }
+    .navbar h1{
+        font-size: 16px;
+        padding: 1px;
+        margin: 0%;
+    }
+    .navbar li a{
+        padding: 1px;
+        margin: 10px;
+        font-size: 12px;
+    }
+    .navbar ul{
+        position: relative;
+        bottom: -10px;
+    }
+    .home{
+        position: relative;
+        top: 42px;
+        width: -webkit-fill-available;
+        overflow: hidden;
+        margin: 10px;
+        padding: 5px;
+        font-family: sans-serif;
+        color: rgb(47, 128, 235);
+        display: inline-block;
+    }
+    .home #i1{
+        width: 30%;
+    }
+    .home #p1{
+        font-family: system-ui;
+        float: right;
+        position: absolute;
+        top: 35px;
+        left: 30%;
+        width: 70%;
+        color: #000000;
+        font-size: 6px;
+    }
+    .home h2{
+        font-size: 12px;
+        position: relative;
+        top: -220px;
+        left: 30%;
+        font-family: system-ui;
+    }
+    .home h1{
+        font-family: system-ui;
+        margin: 2px;
+        font-size: 12px;
+    }
+    .home #i2{
+        float: right;
+        margin: 5px;
+        width: 30%;
+    }
+    .home #p2{
+        font-family: system-ui;
+        color: #000000;
+        font-size: 8px;
+    }
+    .home li{
+        font-size: 9px;
+    }
+}
