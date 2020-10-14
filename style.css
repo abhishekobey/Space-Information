@@ -103,7 +103,7 @@
     }
     .navbar li a{
         padding: 1px;
-        margin: 10px;
+        margin: 8px;
         font-size: 12px;
     }
     .navbar ul{
@@ -122,7 +122,7 @@
         display: inline-block;
     }
     .home #i1{
-        width: 30%;
+        width: 29%;
     }
     .home #p1{
         font-family: system-ui;
@@ -137,7 +137,7 @@
     .home h2{
         font-size: 12px;
         position: relative;
-        top: -220px;
+        top: -215px;
         left: 30%;
         font-family: system-ui;
     }
