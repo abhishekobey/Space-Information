@@ -129,6 +129,7 @@ iframe{
         margin: 3%;
         padding: 5px;
         display: inline-block;
+        margin-bottom: 40px;
     }
     .left{
         float: left;
