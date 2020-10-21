@@ -2,60 +2,173 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Poppins",sans-serif;
-    background: url(ibg.jpg);
+    background: url(ibg.png);
     background-size: cover;
-}
-header{
-    position: relative;
-    max-width: 45%;
-    margin: 30px;
-    margin-top: 60px;
-    padding: 10px;
-    background: linear-gradient(to left ,#0033CC,#66CCFF,#0033CC);
-    border-radius: 50px;
-}
-.clearfix{
-    clear: both;
-}
-nav ul{
-    display: flex;
-    margin: 0%;
 }
 nav ul li{
     list-style: none;
 }
-nav ul li a{
-    font-size: 25px;
-    display: block;
-    padding: 0px 20px;
-    text-decoration: none;
-    color: white;
-}
-nav ul li a:hover{
-    color: rgb(24, 60, 128);
-    transition: 0.5s;
+#toggle{
+    display: none;
 }
 .menu-toggle{
     display: none;
 }
-#toggle
-    {
-        display: none;
+body button{
+    position: relative;
+    top: 140px;
+    left: 18%;
+    border: none;
+    background: none;
+}
+body button a{
+    color: #2196f3;
+    font-family: "Poppins",sans-serif;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden;
+    transition: 0.2s;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+body button a:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 40px #2196f3, 0 0 100px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.3s;
+}
+#news{
+    float: right;
+    top: 115px;
+    left: 0;
+    right: 10%;
+    margin-right: 20%;
+}
+#video{
+    left: 16%;
+    top: 450px;
+}
+#science{
+    top: 418px;
+    left: -3%;
+    float: right;
+}
+.bubble_container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.bubble{
+    position: absolute;
+    bottom: -100px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2), inset 0px 10px 30px 5px rgb(10 202 255);
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: blue;
+    animation: moving 0.5s infinite linear;        
+}
+
+@keyframes moving{
+    0%{
+        bottom: -100px;
     }
+    100%{
+        bottom: 1080px;
+    }
+}
+.bubble:hover{
+    animation: none;
+    filter: blur(150px);
+}
+.bubble::after{
+    content: "";
+    background: radial-gradient(ellipse at center , rgba(255,255,255,0.5) 0% ,rgba(255,255,255,0)70%);
+}
+
+#one{
+    width: 40px;
+    height: 40px;
+    left: 5%;
+    animation-duration: 8s;
+}
+#two{
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+#three{
+    width: 50px;
+    height: 50px;
+    left: 35%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+#for{
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    animation-duration: 7s;
+    animation-delay: 0s;
+}
+#fv{
+    width: 35px;
+    height: 35px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+#six{
+    width: 25px;
+    height: 25px;
+    left: 75%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+#svn{
+    width: 45px;
+    height: 45px;
+    left: 80%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+#et{
+    width: 60px;
+    height: 60px;
+    left: 8%;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+#nin{
+    width: 60px;
+    height: 60px;
+    left: 48%;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+#tn{
+    width: 10px;
+    height: 10px;
+    left: 88%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
 
 @media (max-width: 768px)
 {
-    body{
-        background-image: url(pbg.jpg);
-    }
-    header{
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-        border-radius: 0;
-    }
     nav ul li a{
-        padding: 25px 0px;
+        margin: 10px auto;
+    }
+    nav li{
+        margin: 13%;
     }
     nav ul{
         display: block;
@@ -79,6 +192,7 @@ nav ul li a:hover{
     } 
     nav
     {
+        width: 100%;
         display: none;
     }
     #toggle:checked + nav
@@ -88,5 +202,48 @@ nav ul li a:hover{
     #toggle
     {
         display: none;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins",sans-serif;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url(pbg.png);
+        background-repeat: no-repeat;
+    }
+    body button{
+        position: static;
+        margin: 45px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        float: right;
+        margin-right: 10px;
+    }
+    body button a{
+        color: #2196f3;
+        font-family: "Poppins",sans-serif;
+        padding: 7px 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 10px;
+        font-weight: bold;
+        overflow: hidden;
+        transition: 0.2s;
+        
+    }
+    body button a:hover{
+        color: #255784;
+        background: #2196f3;
+        box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+        transition-delay: 0.3s;
+    }
+    #news{
+        float: right;
+        margin-right: 10px;
+    }
+    #science{
+        float: right;
     }
 }
