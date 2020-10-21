@@ -3,50 +3,66 @@
     padding: 0px;
     background-size: cover;
 }
-.navbar{
-    position: fixed;
-    background-color: #000000;
-    background-image: none;
-    padding: 3px;
-    color: white; 
-    width: -webkit-fill-available;
-    overflow: hidden;
-    z-index: 12;
+body{
+    margin: 0;
+    padding: 0; 
+    background: linear-gradient(to left ,#3e68e9,#66CCFF,#6788ec);
+    font-family: "Poppins",sans-serif;
 }
-.navbar ul{
-    position: relative;
-    bottom: 16px;
-    list-style: none;
-    overflow: hidden;
-    padding-left: 31%;
+header{
+    max-width: 100%;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    background: linear-gradient(to left ,#061b97,#0d6097,#052ba8);
 }
-.navbar li{
-    font-weight: bold;
-    float: left;
-    font-family: sans-serif;
-}
-.navbar li a{
-    padding: 3px;
-    text-decoration: none;
-    margin: 46px;
+.logo{
     color: white;
-    font-size: 19px;
-    
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+
 }
-.navbar a:hover{
-    text-decoration: underline ;
-    color: aqua;
+nav{
+    float: right;
 }
-.navbar h1{
-    position: relative;
-    top: 9px;
-    display: inline-block;
-    padding: 3px;
-    margin: 10px;
-    padding-left: 35px;
-    font-family: math;
-    font-size: 34px;
+.clearfix{
+    clear: both;
 }
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    margin: 10px 72px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #66CCFF;
+    color: #fff;
+    transition: 0.5s;
+}
+.menu-toggle{
+    display: none;
+}
+#toggle
+    {
+        display: none;
+    }
 iframe{
     margin: 21px;
 }
@@ -58,8 +74,8 @@ iframe{
     overflow: hidden;
     margin: 38px;
     padding: 10px;
-    font-family: system-ui;
-    color: rgb(0, 0, 0);
+    font-family: "Poppins",sans-serif;
+    color:  black;
     display: inline-block;
 }
 .left{
@@ -100,30 +116,57 @@ iframe{
     float: left;
     color: black;
 }
-@media (max-width: 1125px){
-    .navbar{
-        height: 50px;
+@media (max-width: 768px)
+{
+    .logo{
+        font-size: 32px;
     }
-    .navbar h1{
-        position: relative;
-        top: 9px;
-        padding-left: 35px;
-        font-family: math;
-        font-size: 16px;
-        padding: 1px;
-        margin: auto;
+    header{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
     }
-    .navbar li a{
-        padding: 1px;
-        margin: 5px;
-        font-size: 12px;
+    nav ul li a{
+        margin: 10px auto;
+        padding: 25px -1px;
     }
-    .navbar ul{
-        display: inline-block;
-        margin: auto;
-        position: relative;
-        bottom: -10px;
-        padding-left: 0%;
+    nav li{
+        margin: 0;
+    }
+    nav ul{
+        display: block;
+    }
+    .menu-toggle
+    {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(0, 238, 255);
+    }
+    .menu-toggle::before
+    {
+        line-height: 40px;
+        font-family: fontAwesome;
+    } 
+    nav
+    {
+        width: 100%;
+        float: left;
+        display: none;
+    }
+    #toggle:checked + nav
+    {
+        display: block;
+    }
+    #toggle
+    {
+        display: none;
     }
     .video h1{
         font-size: 20px;
