@@ -98,7 +98,7 @@ nav ul li a:hover{
 @media (max-width: 768px)
 {
     .logo{
-        font-size: 32px;
+        font-size: 25px;
     }
     header{
         max-width: 100%;
