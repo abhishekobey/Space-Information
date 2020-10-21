@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+}
+body{
+    margin: 0;
+    padding: 0; 
+    background: linear-gradient(to left ,#3e68e9,#66CCFF,#6788ec);
+    font-family: "Poppins",sans-serif;
+}
+header{
+    max-width: 100%;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    background: linear-gradient(to left ,#061b97,#0d6097,#052ba8);
+}
+.logo{
+    color: white;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+nav{
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    margin: 10px 72px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #66CCFF;
+    color: #fff;
+    transition: 0.5s;
+}
+.menu-toggle{
+    display: none;
+}
+#toggle
+    {
+        display: none;
+    }
+
+.home{
+    position: relative;
+    top: 85px;
+    width: -webkit-fill-available;
+    overflow: hidden;
+    margin: 20px;
+    margin-left: 50px;
+    padding: 10px;
+    font-family: sans-serif;
+    color: rgb(7, 10, 177);
+    display: inline-block;
+}
+.home h1{
+    font-family: system-ui;
+    margin: 5px;
+}
+.home #i2{
+    float: right;
+    margin: 11px;
+    width: 24%;
+}
+.home #p2{
+    font-family: system-ui;
+    color: #000000;
+    font-size: large;
+}
+.home li{
+    color: #000000;
+    list-style: inside;
+}
+
+@media (max-width: 768px)
+{
+    .logo{
+        font-size: 32px;
+    }
+    header{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    nav ul li a{
+        margin: 10px auto;
+        padding: 25px -1px;
+    }
+    nav li{
+        margin: 0;
+    }
+    nav ul{
+        display: block;
+    }
+    .menu-toggle
+    {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(0, 238, 255);
+    }
+    .menu-toggle::before
+    {
+        line-height: 40px;
+        font-family: fontAwesome;
+    } 
+    nav
+    {
+        width: 100%;
+        float: left;
+        display: none;
+    }
+    #toggle:checked + nav
+    {
+        display: block;
+    }
+    #toggle
+    {
+        display: none;
+    }
+    .home{
+        position: relative;
+        top: 42px;
+        width: -webkit-fill-available;
+        overflow: hidden;
+        margin: 10px;
+        padding: 5px;
+        font-family: sans-serif;
+        color: rgb(47, 128, 235);
+        display: inline-block;
+    }
+    .home h1{
+        font-family: system-ui;
+        margin: 2px;
+        font-size: 12px;
+    }
+    .home #i2{
+        float: right;
+        margin: 5px;
+        width: 30%;
+    }
+    .home #p2{
+        font-family: system-ui;
+        color: #000000;
+        font-size: 8px;
+    }
+    .home li{
+        font-size: 9px;
+    }
+}
